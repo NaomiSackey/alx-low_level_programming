@@ -1,2 +1,2 @@
 #!/bin/bash
-export -s- masm=intel $CFILE
+gcc -s- masm=intel $CFILE
