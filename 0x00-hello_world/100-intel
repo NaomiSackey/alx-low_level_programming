@@ -1,2 +1,2 @@
 #!/bin/bash
-export -s _masn = intel $CFILE
+export -s masm=intel $CFILE
