@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* puts2 - function should print only one character out of two
+* puts2 - func should prints every other character.
 * starting with the first one
 * @str: input
 * Return: print
