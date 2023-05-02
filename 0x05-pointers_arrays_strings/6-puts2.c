@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
-* puts2 - func should prints every other character.
-* starting with the first one
+* puts2 - func should prints every other character starting with the first one
 * @str: input
 * Return: print
 */
