@@ -1,10 +1,5 @@
 #include <stdio.h>
 
-/**
-* main - entry code
-*
-* Return: 0 if successful and 1 if on error
-*/
 int main(void)
 {
 int n;
