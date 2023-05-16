@@ -2,6 +2,6 @@
 #define MAIN_H
 
 int _putchar(char);
-int atoi(char *s);
+int _atoi(char *s);
 
 #endif
