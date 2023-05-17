@@ -2,36 +2,39 @@
 #include <stdlib.h>
 
 /**
-* argstostr - check the code for ALX School students.
-* @ac: integer
-* @av: character
-* Return: Null or string.
+* argstostr - main entry
+* @ac: int input
+* @av: double pointer array
+* Return: 0
 */
 char *argstostr(int ac, char **av)
 {
-int i, j, l, buffL;
-char *p;
+	int i, n, r = 0, l = 0;
 
-if (ac == 0 || av == NULL)
-{
-return (NULL);
-}
-i = j = l  = buffL = 0;
-for (i = 0; av[i]; i++)
-{
-for (j = 0; av[i][j]; j++)
-l++;
-}
-p = (char *) malloc(l * sizeof(char) + ac + 1);
-if (p == NULL)
-return (NULL);
-for (i = 0; av[i]; i++)
-{
-for (j = 0; av[i][j]; j++, buffL++)
-p[buffL] = av[i][j];
-p[buffL] = '\n';
-buffL++;
-}
-p[buffL] = '\0';
-return (p);
+	char *str;
+
+	if (ac == 0 || av == NULL)
+	return (NULL);
+	for (i = 0; i < ac; i++)
+	{
+	for (n = 0; av[i][n]; n++)
+	l++;
+	}
+	l += ac;
+	str = malloc(sizeof(char) * l + 1);
+	if (str == NULL)
+	return (NULL);
+	for (i = 0; i < ac; i++)
+	{
+	for (n = 0; av[i][n]; n++)
+	{
+	str[r] = av[i][n];
+	r++;
+	}
+	if (str[r] == '\0')
+	{
+	str[r++] = '\n';
+	}
+	}
+	return (str);
 }
