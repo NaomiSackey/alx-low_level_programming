@@ -20,6 +20,7 @@ i++;
 }
 return (1);
 }
+
 /**
 * _strlen - returns the length of a string
 * @s: string to evaluate
@@ -36,14 +37,17 @@ i++;
 }
 return (i);
 }
+
 /**
 * errors - handles errors for main
 */
 void errors(void)
+
 {
 printf("Error\n");
 exit(98);
 }
+
 /**
 * main - multiplies two positive numbers
 * @argc: number of arguments
@@ -89,8 +93,8 @@ if (a)
 _putchar(result[i] + '0');
 }
 if (!a)
-	_putchar('0');
-	_putchar('\n');
-	free(result);
-	return (0);
+_putchar('0');
+_putchar('\n');
+free(result);
+return (0);
 }
